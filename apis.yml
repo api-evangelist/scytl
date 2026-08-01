@@ -1,8 +1,26 @@
 aid: scytl
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scytl.png
 name: scytl
-description: scytl is a company surfaced as a portfolio company of balderton-capital, sapphire-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  scytl is an electoral technology company entered into the API Evangelist network
+  as a portfolio lead of balderton-capital and sapphire-ventures. The scytl.com domain
+  today presents an electoral-technology offering (secure, scalable and auditable digital
+  voting and election-management platforms serving governments and electoral bodies
+  internationally). Enrichment probing found a live HTTPS site (TLS 1.3, SPF and DMARC
+  with a reject policy) but no public API surface — no developer portal, API reference,
+  OpenAPI/SDKs, or well-known API artifacts are published, so this profile remains an
+  identity-and-security record rather than an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/scytl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Elections
+- Voting Technology
+- GovTech
+- Electoral Technology
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scytl-domain-security.yml
 - type: Website
   url: http://www.scytl.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
