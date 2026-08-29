@@ -33,6 +33,9 @@ description: >-
   OpenAPI/SDKs, or well-known API artifacts are published, so this profile remains an
   identity-and-security record rather than an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/scytl/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Enrichment probing found a live HTTPS site (TLS 1.3, SPF and DMARC with a reject policy) but no public API surface — no developer portal, API reference, OpenAPI/SDKs, or well-known API artifacts are p"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
